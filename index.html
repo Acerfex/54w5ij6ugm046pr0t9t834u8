@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quellenangaben</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.png">
+    <style>
+        /* Body und Hintergrund */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            overflow: hidden; /* verhindert Scrollen des Body */
+        }
+
+        body {
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed; /* Hintergrund fixieren */
+            position: relative;
+            color: #fff;
+        }
+
+        /* Dunkle Überlagerung */
+        body::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6);
+            z-index: 1;
+        }
+
+        /* Container für Card */
+        .content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            padding: 1rem;
+        }
+
+        /* Card */
+        .card {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            padding: 2rem;
+            max-width: 700px;
+            max-height: 80vh; /* Card Höhe begrenzen */
+            overflow-y: auto; /* Scrollen innerhalb der Card */
+            text-align: left;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+        a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Scrollbar Styling (optional, modern) */
+        .card::-webkit-scrollbar {
+            width: 8px;
+        }
+        .card::-webkit-scrollbar-thumb {
+            background-color: rgba(255,255,255,0.3);
+            border-radius: 4px;
+        }
+        .card::-webkit-scrollbar-track {
+            background-color: rgba(0,0,0,0.1);
+            border-radius: 4px;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            h3 { font-size: 1.2rem; }
+            .card { padding: 1rem; max-height: 90vh; }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="card">
+            <h1>Quellenangaben - Die Erdzeitalter</h1>
+            <h3>Links:</h3>
+            <ul>
+                <li><a href="https://de.wikipedia.org/wiki/Ediacarium" target="_blank">Wikipedia: Ediacarium</a></li>
+                <li><a href="https://de.wikipedia.org/wiki/Ediacara-Fauna" target="_blank">Wikipedia: Ediacara-Fauna</a></li>
+                <li><a href="https://example.com" target="_blank">Beispiel-Link 3</a></li>
+                <li><a href="https://example.com" target="_blank">Beispiel-Link 4</a></li>
+                <li><a href="https://example.com" target="_blank">Beispiel-Link 5</a></li>
+                <li><a href="https://example.com" target="_blank">Beispiel-Link 6</a></li>
+                <li><a href="https://example.com" target="_blank">Beispiel-Link 7</a></li>
+                <li><a href="https://example.com" target="_blank">Beispiel-Link 8</a></li>
+                <!-- einfach weitere <li> hinzufügen -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
